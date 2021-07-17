@@ -1,0 +1,176 @@
+*{
+    /* height: 100vh; */
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1, p {
+    font-family: Lato;
+  }
+  
+  .heading-bar{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    max-width: auto;
+    background: rgb(228, 99, 240);
+    
+  }
+  
+  .heading-bar p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  
+  .column{
+    float: left;  
+  }
+  
+  .instruction{
+    width: 25%;
+    height: calc(100vh - 100px);
+    color: white;
+    background-color: rgb(236, 68, 147);
+  }
+  .instruction h1{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .list{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 47px;
+  }
+  
+  .list li{
+    font-size: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #eee;
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+  .conversion{
+    width: 75%;
+    height: calc(100vh - 100px);
+    color: white;
+    background-color: rgb(68, 216, 236);
+  }
+  
+  .conversion h1{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .img2text{
+    margin: 50px;
+  }
+  
+  .img2text h3{
+    position: relative;
+    font-size: 30px;
+  }
+  
+  .extracted-text{
+    float: right;
+  }
+
+  
+  .action{
+    
+    position: absolute;
+    bottom: 50px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload{
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin-right: 16px;
+      font-size: 24px;
+      font-weight: 600;
+      background-color: white;
+      color: rgb(68, 216, 236);
+  }
+  
+  .btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 16px;
+    margin-top: 24px;
+    font-size: 24px;
+    background-color: white;
+    color: rgb(68, 216, 236);
+    cursor: pointer;
+  }
+  
+  #label{
+    margin-right: 16px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  #language{
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 24px;
+      margin-right: 24px;
+      color: rgb(68, 216, 236);
+  }
+  
+  .App-image{
+    width: 60vmin;
+    object-fit: contain;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  
+  .App-main{
+    background-color: #7c96ca;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(7px + 2vmin);
+    color: white;
+  }
+  
+  .text-box{
+    width: 60vmin;
+    height: 190px;
+    padding: 8px;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .text-box p{
+    font-size: 20px;
+  }
