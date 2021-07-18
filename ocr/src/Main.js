@@ -18,7 +18,7 @@ const Main = () =>{
   const handleClcik = () => {
     Tesseract.recognize(
       imagePath,
-      'eng+ben',
+      'eng+ben+hin',
       {
         logger: m => console.log(m)
       }
