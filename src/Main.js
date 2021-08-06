@@ -70,9 +70,9 @@ const Main = () =>{
                 <div className="column extracted-text">
                     <h3 style={{marginBottom: '20px'}}>{flag ? `Extraxted text` : ''}</h3>
 
-                    <div className="text-box" style={{background: text ? '#fff' : ''}}>
-                        <p> { text } </p>
-                    </div>
+                    <textarea rows="15" cols="50" value={text} className="text-box" style={{visibility: text ? 'visible' : 'hidden'}}>
+                    
+                    </textarea>
                 </div>
 
                 {/* Action */}
